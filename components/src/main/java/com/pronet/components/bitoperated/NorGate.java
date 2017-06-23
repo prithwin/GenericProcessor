@@ -5,16 +5,16 @@ import com.pronet.components.util.CircuitUtil;
 import com.pronet.logic.Circuit;
 import com.pronet.logic.CircuitComponent;
 import com.pronet.model.Bit;
-import java.util.List;
+
 import java.util.ArrayList;
+import java.util.List;
 
 /**
- * a circuit based implementation for a NAND gate.
- * TODO: change circuit component to reflect multiway chaining and multiple outputs
+ * Created by prith on 21-06-2017.
  */
-public class NandGate extends GenericLinearComponent implements Circuit {
-    public NandGate() {
-        this.circuitComponents.add(new LogicGateCircuitComponent(new And()));
+public class NorGate extends GenericLinearComponent implements Circuit {
+    public NorGate() {
+        this.circuitComponents.add(new LogicGateCircuitComponent(new Or()));
         this.circuitComponents.add(new LogicGateCircuitComponent(new Not()));
     }
 }

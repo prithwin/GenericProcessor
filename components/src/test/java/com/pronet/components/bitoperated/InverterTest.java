@@ -10,14 +10,14 @@ import static org.testng.Assert.*;
 public class InverterTest {
 
     @Test public void testInverter() {
-        LogicGate gate = new InverterGate();
+        LogicGate gate = new Not();
         Bit[] input  = {new Bit(false)};
         gate.set(input);
         assertTrue(gate.read().read());
     }
 
     @Test public void testInverterFlip() {
-        LogicGate gate = new InverterGate();
+        LogicGate gate = new Not();
         Bit[] input  = {new Bit(true)};
         gate.set(input);
         assertFalse(gate.read().read());

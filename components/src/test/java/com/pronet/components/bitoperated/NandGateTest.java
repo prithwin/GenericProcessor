@@ -11,10 +11,6 @@ import com.pronet.model.Bit;
 public class NandGateTest {
     @Test public void testNandgate(){
         NandGate nandGate = new NandGate();
-        LogicGateCircuitComponent andgate = new LogicGateCircuitComponent(new AndGate());
-        LogicGateCircuitComponent notGate = new LogicGateCircuitComponent(new InverterGate());
-        nandGate.addComponent(andgate);
-        nandGate.addComponent(notGate);
         Bit[] tf = {new Bit(true),new Bit(false)};
         nandGate.set(tf);
         assertTrue(nandGate.read()[0].read());

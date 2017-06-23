@@ -9,7 +9,7 @@ import com.pronet.model.Bit;
  */
 public class AndGateTest {
     @Test public void testSet() {
-        AndGate and = new AndGate();
+        And and = new And();
         Bit[] tf = { new Bit(true),new Bit(false)};
         and.set(tf);
         assertFalse(and.read().read());

@@ -34,4 +34,4 @@ public class LogicGateCircuitComponent implements CircuitComponent{
     public int getOutputSize() {
         return gate.getOutputSize();
     }
-}
+    }

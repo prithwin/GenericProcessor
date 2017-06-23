@@ -7,7 +7,7 @@ import com.pronet.model.Bit;
 /**
  * Created by prith on 20-06-2017.
  */
-public class AndGate implements LogicGate {
+public class And implements LogicGate {
     private boolean output;
     private static final int INPUT = 2;
     private static final int OUTPUT = 1;
